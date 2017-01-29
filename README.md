@@ -2,5 +2,11 @@
 
 This script adds a author tag to all your python files in a propject.
 
-Sample usage :
-`python script.py [directory] 'Author Name'`
+Make the script an executable with 
+`chmod +x script.py`
+
+Usage :
+`./script.py [filetype] [directory] 'Author Name'`
+
+Sample Usage :
+`./script.py html project/ 'John Doe'`
