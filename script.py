@@ -24,7 +24,8 @@ for dname, dirs,files in os.walk(directory):
                 soup = BeautifulSoup(f.read())
                 title = soup.find('title')
                 meta = soup.new_tag('meta')
-                meta['author'] = author
+                meta['name'] = "author"
+                meta['content'] = author
                 title.insert_after(meta)
                 f.seek(0)
                 f.write(soup.prettify())
